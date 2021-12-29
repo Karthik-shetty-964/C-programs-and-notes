@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{   
+    int n=5;
+    int k=1;
+    int c=0;
+    for(int i=0;i<5;i++){
+        for(int j=0;j<n;j++){
+            printf(" ");
+            if(j>=n-1-i){
+               printf("%d",k+c);
+               c++;
+            }
+        }
+        printf("\n");
+        c=0;
+        k++;
+    }
+    return 0;
+}
